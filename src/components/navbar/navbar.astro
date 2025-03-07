@@ -23,70 +23,75 @@ const menuitems = [
 
 <!-- <div class="bg-secondary w-full pt-1 pb-0.5"> -->
 <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-3">
-    <Astronav>
-      <div
-        class="flex w-full mb-1 lg:w-auto items-center justify-between tracking-widest font-semibold">
-        <div class="group inline-block ml-0 lg:ml-5">
-          <a
-            href="/"
-            class="text-3xl inline-flex gap-0 font-mono transition-colors duration-300">
-            <span class="text-primary group-hover:text-logopeach">car</span>
-            <span class="text-logopeach">u</span>
-            <span class="text-primary group-hover:text-logopeach">so</span>
-          </a>
-        </div>
+  <div class="bg-secondary z-50 fixed top-0 left-0 w-full">
+    <div class="max-w-[1280px] mx-auto px-6">
+      <header
+        class="flex flex-col lg:flex-row justify-between items-center my-3">
+        <Astronav>
+          <div
+            class="flex w-full mb-1 lg:w-auto items-center justify-between tracking-widest font-semibold">
+            <div class="group inline-block ml-0 lg:ml-5">
+              <a
+                href="/"
+                class="text-3xl inline-flex gap-0 font-mono transition-colors duration-300">
+                <span class="text-primary group-hover:text-logopeach">car</span>
+                <span class="text-logopeach">u</span>
+                <span class="text-primary group-hover:text-logopeach">so</span>
+              </a>
+            </div>
 
-        <div class="block lg:hidden">
-          <MenuIcon class="w-8 h-8 text-gray-800" />
+            <div class="block lg:hidden">
+              <MenuIcon class="w-8 h-8 text-gray-800" />
+            </div>
+          </div>
+          <MenuItems class="hidden w-full lg:w-auto ml-30 mt-2 lg:flex lg:mt-0">
+            <ul class="flex flex-col lg:flex-row lg:gap-3">
+              {
+                menuitems.map((item, index) => (
+                  <li>
+                    <a
+                      href={item.path}
+                      class={`flex lg:px-3 py-2 items-center font-mono text-lg ${currentPath === item.path ? "text-primary" : ""} text-gray-600 hover:text-logopeach hover:underline`}>
+                      <span> {item.title}</span>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+            <div class="lg:hidden flex flex-col justify-items-start mt-3 gap-4">
+              <Link
+                href="https://www.figma.com/proto/fabosVwtavjOXD8dOV1HPY/Caruso-Workflow?node-id=63-39&p=f&t=M2kRbRTMo0Jvl0H3-0&scaling=min-zoom&content-scaling=fixed&page-id=63%3A39&starting-point-node-id=63%3A40"
+                target="_blank"
+                style="inverted"
+                class="w-fit"
+                size="md">View Demo</Link
+              >
+              <Link
+                href="https://demo-caruso-5c27af96ca38.herokuapp.com/"
+                target="_blank"
+                size="md"
+                class="w-fit">Login</Link
+              >
+            </div>
+          </MenuItems>
+        </Astronav>
+        <div>
+          <div class="hidden lg:flex items-center gap-2">
+            <Link
+              href="https://www.figma.com/proto/fabosVwtavjOXD8dOV1HPY/Caruso-Workflow?node-id=63-39&p=f&t=M2kRbRTMo0Jvl0H3-0&scaling=min-zoom&content-scaling=fixed&page-id=63%3A39&starting-point-node-id=63%3A40"
+              target="_blank"
+              style="inverted"
+              size="md">View Demo</Link
+            >
+            <Link
+              href="https://demo-caruso-5c27af96ca38.herokuapp.com/"
+              target="_blank"
+              size="md">Login</Link
+            >
+          </div>
         </div>
-      </div>
-      <MenuItems class="hidden w-full lg:w-auto ml-30 mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
-          {
-            menuitems.map((item, index) => (
-              <li>
-                <a
-                  href={item.path}
-                  class={`flex lg:px-3 py-2 items-center font-mono text-lg ${currentPath === item.path ? "text-primary" : ""} text-gray-600 hover:text-logopeach hover:underline`}>
-                  <span> {item.title}</span>
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-        <div class="lg:hidden flex flex-col justify-items-start mt-3 gap-4">
-          <Link
-            href="https://www.figma.com/proto/fabosVwtavjOXD8dOV1HPY/Caruso-Workflow?node-id=63-39&p=f&t=M2kRbRTMo0Jvl0H3-0&scaling=min-zoom&content-scaling=fixed&page-id=63%3A39&starting-point-node-id=63%3A40"
-            target="_blank"
-            style="inverted"
-            class="w-fit"
-            size="md">View Demo</Link
-          >
-          <Link
-            href="https://demo-caruso-5c27af96ca38.herokuapp.com/"
-            target="_blank"
-            size="md"
-            class="w-fit">Login</Link
-          >
-        </div>
-      </MenuItems>
-    </Astronav>
-    <div>
-      <div class="hidden lg:flex items-center gap-2">
-        <Link
-          href="https://www.figma.com/proto/fabosVwtavjOXD8dOV1HPY/Caruso-Workflow?node-id=63-39&p=f&t=M2kRbRTMo0Jvl0H3-0&scaling=min-zoom&content-scaling=fixed&page-id=63%3A39&starting-point-node-id=63%3A40"
-          target="_blank"
-          style="inverted"
-          size="md">View Demo</Link
-        >
-        <Link
-          href="https://demo-caruso-5c27af96ca38.herokuapp.com/"
-          target="_blank"
-          size="md">Login</Link
-        >
-      </div>
+      </header>
     </div>
-  </header>
+  </div>
 </Container>
 <!-- </div> -->
