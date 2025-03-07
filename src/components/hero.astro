@@ -7,7 +7,7 @@ import { Icon } from "astro-icon/components";
 
 <main
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+  <div class="m-8 p-1 hidden md:block">
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
@@ -17,18 +17,34 @@ import { Icon } from "astro-icon/components";
       format="avif"
     />
   </div>
-  <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+  <div class="md:order-1">
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold">
+      Real-Time Advanced Data Collaboration
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
-      create any website with this starter.
+      Collaborate on data analysis like never before! Work with your teams in
+      real time, streamline workflows, and eliminate version control nightmares.
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
+    <div class="mt-6 flex flex-col sm:flex-row gap-3 w-full">
+      <form
+        name="subscribe"
+        method="POST"
+        data-netlify="true"
+        class="flex flex-row items-center gap-3">
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          class="w-60 p-2 pl-4 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+        />
+        <button
+          type="submit"
+          class="px-6 bg-primary hover:bg-accent hover:underline text-white py-2.5 outline outline-gray-600 rounded-lg shadow-md transition-all"
+          >Join Waitlist!</button
+        >
+      </form>
+      <!-- <Link
         href="#"
         href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
         target="_blank"
@@ -36,7 +52,7 @@ import { Icon } from "astro-icon/components";
         rel="noopener">
         <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
 
-         Download for Free
+        Download for Free
       </Link>
       <Link
         size="lg"
@@ -46,8 +62,8 @@ import { Icon } from "astro-icon/components";
         class="flex gap-1 items-center justify-center"
         target="_blank">
         <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-         GitHub Repo
-      </Link>
+        GitHub Repo
+      </Link> -->
     </div>
   </div>
 </main>
