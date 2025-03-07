@@ -23,14 +23,14 @@ const menuitems = [
 
 <!-- <div class="bg-secondary w-full pt-1 pb-0.5"> -->
 <Container>
-  <div class="bg-secondary w-full fixed top-0 left-0 mb-2">
+  <div class="bg-secondary w-full z-50 fixed top-0 left-0 mb-2">
     <div class="max-w-[1280px] mx-auto">
       <header
         class="flex flex-col lg:flex-row justify-between items-center my-3">
         <Astronav>
           <div
             class="flex w-full mb-1 lg:w-auto items-center justify-between tracking-widest font-semibold">
-            <div class="group inline-block">
+            <div class="group inline-block ml-5">
               <a
                 href="/"
                 class="text-3xl inline-flex gap-0 font-mono transition-colors duration-300">
@@ -41,7 +41,7 @@ const menuitems = [
             </div>
 
             <div class="block lg:hidden">
-              <MenuIcon class="w-4 h-4 text-gray-800" />
+              <MenuIcon class="w-8 h-8 text-gray-800" />
             </div>
           </div>
           <MenuItems class="hidden w-full lg:w-auto ml-30 mt-2 lg:flex lg:mt-0">
@@ -58,8 +58,13 @@ const menuitems = [
                 ))
               }
             </ul>
-            <div class="lg:hidden flex items-center mt-3 gap-4">
-              <Link href="#" style="outline" block size="md">View Demo</Link>
+            <div class="lg:hidden flex flex-col mt-3 gap-4 px-10">
+              <Link
+                href="https://www.figma.com/proto/fabosVwtavjOXD8dOV1HPY/Caruso-Workflow?node-id=63-39&p=f&t=M2kRbRTMo0Jvl0H3-0&scaling=min-zoom&content-scaling=fixed&page-id=63%3A39&starting-point-node-id=63%3A40"
+                target="_blank"
+                style="inverted"
+                size="md">View Demo</Link
+              >
               <Link
                 href="https://demo-caruso-5c27af96ca38.herokuapp.com/"
                 target="_blank"
