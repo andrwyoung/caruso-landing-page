@@ -1,4 +1,9 @@
-<footer class="my-20">
+---
+const currentPath = Astro.url.pathname;
+---
+
+<footer
+  class={` py-8 ${currentPath === "/" ? "relative bg-secondary h-60 -mt-20 flex flex-col justify-end items-center text-center " : ""} `}>
   <p class="text-center text-sm text-slate-500">
     Copyright © {new Date().getFullYear()} Caruso. All rights reserved.
   </p>
