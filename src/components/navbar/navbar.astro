@@ -51,7 +51,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.path}
-                      class={`flex lg:px-3 py-2 items-center font-mono text-lg ${currentPath === item.path ? "text-primary" : ""} text-gray-600 hover:text-logopeach hover:underline`}>
+                      class={`flex lg:px-3 py-2 items-center font-mono text-lg text-primary underline-offset-3 ${currentPath === item.path ? "underline " : ""} text-gray-600 hover:text-logopeach hover:underline`}>
                       <span> {item.title}</span>
                     </a>
                   </li>
