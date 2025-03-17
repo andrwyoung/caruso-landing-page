@@ -1,7 +1,7 @@
 ---
 draft: false
-name: "William Alexander"
+name: "Placeholder"
 title: "Co-founder, CEO"
-avatar: { src: "/src/assets/william.png", alt: "William Alexander" }
+avatar: { src: "/src/assets/william.png", alt: "Placeholder" }
 publishDate: "2025-03-05 15:38"
 ---
